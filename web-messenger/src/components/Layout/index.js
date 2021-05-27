@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../Header";
 
 export default function Layout(props) {
   return (
     <div>
-      <header>Header</header>
+      <Header />
       {props.children}
     </div>
   );
