@@ -1,5 +1,5 @@
 .registerContainer {
-  widows: 400px;
-  position: relative;
-  max-resolution: 50px auto;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
