@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./style.css";
 
-export const Header = (props) => {
+const Header = (props) => {
   return (
     <header className="header">
       <div style={{ display: "flex" }}>
@@ -16,9 +16,9 @@ export const Header = (props) => {
           </li>
         </ul>
       </div>
-      <div style={{ margin: "20px 0", color: "#fff", fontWeight: "bold" }}>
-        Hi Riz
-      </div>
+      <div
+        style={{ margin: "20px 0", color: "#fff", fontWeight: "bold" }}
+      ></div>
       <ul className="menu">
         <li>
           <Link to={"#"} onClick={props.logout}>
@@ -29,3 +29,5 @@ export const Header = (props) => {
     </header>
   );
 };
+
+export default Header;
