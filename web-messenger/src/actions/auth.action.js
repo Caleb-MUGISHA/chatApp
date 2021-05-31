@@ -1,7 +1,7 @@
-import firebase from "firebase/app";
-require("firebase/auth");
+// import { auth, firestore } from "firebase";
 
-import { auth, firestore } from "firebase";
+import firestore from "firebase/app";
+import auth from "firebase";
 
 export const signUp = (user) => {
   // here i will use redux thunk middleware to allow me to return a function with the dispatch property
