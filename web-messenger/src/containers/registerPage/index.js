@@ -14,6 +14,7 @@ const RegisterPage = (props) => {
 
   const dispatch = useDispatch();
   const registerUser = (e) => {
+    console.log("______________________________");
     e.preventDefault();
     const user = {
       firstName,
@@ -23,11 +24,12 @@ const RegisterPage = (props) => {
     };
     dispatch(signUp(user));
   };
+
   return (
     <Layout>
       <div className="registerContainer">
         <Card>
-          <form onSubmit={registerUser}>
+          <form onSubmit={RegisterPage}>
             <h2>Sign Up</h2>
             <input
               name="firstName"
