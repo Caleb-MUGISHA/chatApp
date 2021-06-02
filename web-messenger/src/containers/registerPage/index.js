@@ -11,10 +11,9 @@ const RegisterPage = (props) => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const dispatch = useDispatch();
+
   const registerUser = (e) => {
-    console.log("______________________________");
     e.preventDefault();
     const user = {
       firstName,
@@ -29,7 +28,7 @@ const RegisterPage = (props) => {
     <Layout>
       <div className="registerContainer">
         <Card>
-          <form onSubmit={RegisterPage}>
+          <form onSubmit={registerUser}>
             <h2>Sign Up</h2>
             <input
               name="firstName"
